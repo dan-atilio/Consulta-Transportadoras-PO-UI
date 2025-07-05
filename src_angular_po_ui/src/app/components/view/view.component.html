@@ -1,0 +1,60 @@
+<po-info p-label="Visualização de Transportadoras"></po-info>
+
+<div class="po-row">
+    <div class="po-md-2">
+        <po-input
+            name="a4Cod"
+            p-label="Código"
+            p-required="true"
+            [p-show-required]="true"
+            p-upper-case="true"
+            [(ngModel)]="a4Cod"
+            [p-maxlength]="6"
+            (p-blur)="validSA4()">
+        </po-input>
+    </div>
+</div>
+
+<div class="po-row">
+    <div class="po-md-6">
+        <po-input
+            name="a4Nome"
+            p-label="Nome"
+            [(ngModel)]="a4Nome"
+            [p-maxlength]="40"
+            p-readonly="true">
+        </po-input>
+    </div>
+
+    <div class="po-md-4">
+        <po-input
+            name="a4Email"
+            p-label="e-Mail"
+            [(ngModel)]="a4Email"
+            [p-maxlength]="30"
+            p-readonly="true">
+        </po-input>
+    </div>
+</div>
+
+<div class="po-row">
+    <div class="po-md-4">
+        <po-input
+            name="a4HPage"
+            p-label="Site"
+            [(ngModel)]="a4HPage"
+            [p-maxlength]="30"
+            p-readonly="true">
+        </po-input>
+    </div>
+
+    <div class="po-md-3">
+        <po-input
+            name="a4Contato"
+            p-label="Contato"
+            [(ngModel)]="a4Contato"
+            [p-maxlength]="15"
+            p-readonly="true">
+        </po-input>
+    </div>
+</div>
